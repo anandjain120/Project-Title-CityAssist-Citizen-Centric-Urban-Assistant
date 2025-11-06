@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: report-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cityassist
+    username: ${DB_USERNAME:cityassist}
+    password: ${DB_PASSWORD:cityassist}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+server:
+  port: 8082
+
+aws:
+  s3:
+    bucket: ${S3_BUCKET:cityassist-reports}
+    region: ${AWS_REGION:us-east-1}
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+logging:
+  level:
+    com.cityassist: INFO
+

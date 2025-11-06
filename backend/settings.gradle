@@ -1,0 +1,8 @@
+rootProject.name = 'cityassist-backend'
+
+include 'user-service'
+include 'report-service'
+include 'notification-service'
+include 'routing-service'
+include 'integration-service'
+
