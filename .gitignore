@@ -1,0 +1,84 @@
+# Dependencies
+node_modules/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+ENV/
+
+# Build outputs
+target/
+build/
+dist/
+*.jar
+*.war
+*.ear
+*.class
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Docker
+.dockerignore
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# Kubernetes
+*.kubeconfig
+
+# Secrets
+secrets/
+*.pem
+*.key
+*.crt
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+
+# Power BI
+*.pbix.tmp
+
+# ML Models
+*.pkl
+*.h5
+*.onnx
+models/checkpoints/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
