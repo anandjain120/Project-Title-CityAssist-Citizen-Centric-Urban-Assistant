@@ -1,0 +1,68 @@
+.alert-card {
+  background: var(--bg-primary);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--border-color);
+}
+
+.alert-card.alert-low {
+  border-left-color: var(--info-color);
+}
+
+.alert-card.alert-medium {
+  border-left-color: var(--warning-color);
+}
+
+.alert-card.alert-high {
+  border-left-color: var(--danger-color);
+}
+
+.alert-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.alert-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.alert-title-section {
+  flex: 1;
+}
+
+.alert-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.alert-time {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.alert-message {
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.alert-action {
+  display: inline-block;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: color 0.2s;
+}
+
+.alert-action:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+

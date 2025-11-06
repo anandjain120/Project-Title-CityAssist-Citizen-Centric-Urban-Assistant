@@ -1,0 +1,50 @@
+.map-page {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 200px);
+  min-height: 500px;
+}
+
+.map-header {
+  margin-bottom: 1rem;
+}
+
+.map-header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.map-header p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.map-container {
+  flex: 1;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+}
+
+.map-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  color: var(--text-secondary);
+}
+
+.map-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.map-actions .btn {
+  flex: 1;
+  min-width: 120px;
+}
+
